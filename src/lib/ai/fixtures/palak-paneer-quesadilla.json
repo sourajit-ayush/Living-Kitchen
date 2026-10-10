@@ -1,0 +1,186 @@
+{
+  "id": "palak-paneer-quesadilla",
+  "kind": "wildcard",
+  "title": "Palak Paneer Tawa Quesadillas",
+  "tagline": "Crisp atta flatbreads stuffed with spiced spinach and melty paneer, with a quick tomato salsa for dipping.",
+  "cuisine": "Indo-Mexican",
+  "diet": "vegetarian",
+  "meal": "snack",
+  "difficulty": "easy",
+  "prep_minutes": 15,
+  "cook_minutes": 15,
+  "servings": 2,
+  "spice_level": 2,
+  "cookware": ["gas", "tawa"],
+  "ingredients": [
+    {
+      "name": "Wheat flour",
+      "ingredient_id": "atta",
+      "quantity": 1,
+      "unit": "cup",
+      "prep": "kneaded into a soft dough with water and a pinch of salt",
+      "status": "missing",
+      "substitutes": [
+        { "name": "Leftover rotis", "note": "Use 4 rotis and skip the rolling step." },
+        { "name": "Bread", "note": "Make it a grilled sandwich with 4 slices instead." }
+      ]
+    },
+    {
+      "name": "Paneer",
+      "ingredient_id": "paneer",
+      "quantity": 150,
+      "unit": "g",
+      "prep": "grated",
+      "status": "have"
+    },
+    {
+      "name": "Spinach",
+      "ingredient_id": "spinach",
+      "quantity": 150,
+      "unit": "g",
+      "prep": "finely chopped",
+      "status": "have"
+    },
+    {
+      "name": "Onion",
+      "ingredient_id": "onion",
+      "quantity": 1,
+      "unit": "piece",
+      "prep": "half finely chopped, half diced for the salsa",
+      "status": "have"
+    },
+    {
+      "name": "Tomato",
+      "ingredient_id": "tomato",
+      "quantity": 2,
+      "unit": "piece",
+      "prep": "diced",
+      "status": "have"
+    },
+    {
+      "name": "Cheese",
+      "ingredient_id": "cheese",
+      "quantity": 40,
+      "unit": "g",
+      "prep": "grated",
+      "status": "optional",
+      "substitutes": [
+        { "name": "Butter", "note": "Brush the outside with butter for richness instead." }
+      ]
+    },
+    {
+      "name": "Coriander leaves",
+      "ingredient_id": "coriander",
+      "quantity": 2,
+      "unit": "tbsp",
+      "prep": "chopped",
+      "status": "optional"
+    },
+    {
+      "name": "Lemon",
+      "ingredient_id": "lemon",
+      "quantity": 0.5,
+      "unit": "piece",
+      "prep": "juiced",
+      "status": "optional"
+    },
+    {
+      "name": "Red chilli powder",
+      "ingredient_id": "red-chilli-powder",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "prep": null,
+      "status": "optional"
+    },
+    {
+      "name": "Chaat masala",
+      "ingredient_id": "chaat-masala",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "prep": null,
+      "status": "optional"
+    },
+    {
+      "name": "Cooking oil",
+      "ingredient_id": "oil",
+      "quantity": 2,
+      "unit": "tsp",
+      "prep": null,
+      "status": "basic"
+    },
+    {
+      "name": "Salt",
+      "ingredient_id": "salt",
+      "quantity": null,
+      "unit": "to-taste",
+      "prep": null,
+      "status": "basic"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "text": "Knead the atta with water and a pinch of salt into a soft dough. Cover and rest for 10 minutes.",
+      "action": "mix",
+      "timer_minutes": 10,
+      "tip": null
+    },
+    {
+      "n": 2,
+      "text": "Make the salsa: mix the diced tomato, diced onion, coriander, lemon juice and a pinch of salt.",
+      "action": "mix",
+      "timer_minutes": null,
+      "tip": "Make it first so the flavours mingle while you cook."
+    },
+    {
+      "n": 3,
+      "text": "Heat 1 tsp oil, sauté the chopped onion for 2 minutes, add the spinach and cook until dry, about 3 minutes. Season with chilli powder and salt, then cool slightly.",
+      "action": "fry",
+      "timer_minutes": 3,
+      "tip": null
+    },
+    {
+      "n": 4,
+      "text": "Mix the spinach with the grated paneer, cheese and chaat masala.",
+      "action": "mix",
+      "timer_minutes": null,
+      "tip": null
+    },
+    {
+      "n": 5,
+      "text": "Roll the dough into 4 thin rounds. Spread filling over one half of each, fold into a half-moon and press the edges.",
+      "action": "other",
+      "timer_minutes": null,
+      "tip": null
+    },
+    {
+      "n": 6,
+      "text": "Cook on a hot tawa with a little oil, 2 minutes per side, until golden spots appear and the cheese melts.",
+      "action": "fry",
+      "timer_minutes": 2,
+      "tip": "Press down with a spatula for an even crisp."
+    },
+    {
+      "n": 7,
+      "text": "Cut into wedges and serve with the salsa.",
+      "action": "plate",
+      "timer_minutes": null,
+      "tip": null
+    }
+  ],
+  "nutrition": {
+    "calories": 455,
+    "protein_g": 21,
+    "carbs_g": 48,
+    "fat_g": 20,
+    "fibre_g": 7,
+    "tags": ["High protein", "High fibre"]
+  },
+  "uses_up": [],
+  "missing_summary": "Add atta (or a few leftover rotis) and you can make Palak Paneer Tawa Quesadillas.",
+  "tips": [
+    "Leftover rotis turn this into a 10-minute snack.",
+    "Swap the salsa for green chutney if you have some."
+  ],
+  "locale": "en"
+}

@@ -1,0 +1,99 @@
+{
+  "id": "mango-lassi",
+  "kind": "almost_there",
+  "title": "Mango Lassi",
+  "tagline": "Thick, cold and sunny: ripe mango blended with curd and a whisper of cardamom.",
+  "cuisine": "Punjabi",
+  "diet": "vegetarian",
+  "meal": "snack",
+  "difficulty": "easy",
+  "prep_minutes": 5,
+  "cook_minutes": 0,
+  "servings": 2,
+  "spice_level": 0,
+  "cookware": ["no-cook"],
+  "ingredients": [
+    {
+      "name": "Ripe mango",
+      "ingredient_id": "mango",
+      "quantity": 1,
+      "unit": "piece",
+      "prep": "peeled and chopped",
+      "status": "missing",
+      "substitutes": [
+        { "name": "Mango pulp", "note": "Use 1 cup of canned pulp and skip the sugar." }
+      ]
+    },
+    {
+      "name": "Curd",
+      "ingredient_id": "curd",
+      "quantity": 1,
+      "unit": "cup",
+      "prep": "chilled",
+      "status": "have",
+      "substitutes": [{ "name": "Greek yoghurt", "note": "Loosen with 2 tbsp extra milk." }]
+    },
+    {
+      "name": "Milk",
+      "ingredient_id": "milk",
+      "quantity": 0.5,
+      "unit": "cup",
+      "prep": "cold",
+      "status": "have"
+    },
+    {
+      "name": "Sugar",
+      "ingredient_id": "sugar",
+      "quantity": 1,
+      "unit": "tbsp",
+      "prep": null,
+      "status": "have",
+      "substitutes": [{ "name": "Honey", "note": "Same amount; no longer vegan-friendly." }]
+    },
+    {
+      "name": "Ice cubes",
+      "ingredient_id": "ice",
+      "quantity": 4,
+      "unit": "piece",
+      "prep": null,
+      "status": "optional"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "text": "Blend the mango, curd, milk and sugar until completely smooth, about 1 minute.",
+      "action": "grind",
+      "timer_minutes": 1,
+      "tip": null
+    },
+    {
+      "n": 2,
+      "text": "Taste, add more sugar if the mango is tart, and blend again for a few seconds.",
+      "action": "mix",
+      "timer_minutes": null,
+      "tip": null
+    },
+    {
+      "n": 3,
+      "text": "Pour over ice into tall glasses and finish with a pinch of cardamom.",
+      "action": "plate",
+      "timer_minutes": null,
+      "tip": null
+    }
+  ],
+  "nutrition": {
+    "calories": 210,
+    "protein_g": 7,
+    "carbs_g": 34,
+    "fat_g": 5,
+    "fibre_g": 2,
+    "tags": ["Cooling"]
+  },
+  "uses_up": [],
+  "missing_summary": "Add a ripe mango and you can make Mango Lassi.",
+  "tips": ["Chill the curd first so the lassi stays thick without too much ice."],
+  "locale": "en",
+  "category": "drink",
+  "contains_alcohol": false
+}

@@ -1,0 +1,176 @@
+{
+  "id": "palak-paneer-bhurji",
+  "kind": "best_match",
+  "title": "Palak Paneer Bhurji",
+  "tagline": "Soft scrambled paneer folded through garlicky spinach. Dinner in twenty minutes, no shopping trip.",
+  "cuisine": "North Indian",
+  "diet": "vegetarian",
+  "meal": "dinner",
+  "difficulty": "easy",
+  "prep_minutes": 10,
+  "cook_minutes": 15,
+  "servings": 2,
+  "spice_level": 3,
+  "cookware": ["gas", "kadai"],
+  "ingredients": [
+    {
+      "name": "Paneer",
+      "ingredient_id": "paneer",
+      "quantity": 200,
+      "unit": "g",
+      "prep": "crumbled",
+      "status": "have",
+      "substitutes": [
+        {
+          "name": "Firm tofu",
+          "note": "Press for 10 min, crumble, and add a squeeze of lemon at the end."
+        },
+        {
+          "name": "Eggs",
+          "note": "Use 3 eggs and scramble them in at step 5 instead (no longer vegetarian)."
+        }
+      ]
+    },
+    {
+      "name": "Spinach",
+      "ingredient_id": "spinach",
+      "quantity": 250,
+      "unit": "g",
+      "prep": "washed and finely chopped",
+      "status": "have",
+      "substitutes": [
+        { "name": "Methi leaves", "note": "Use half the amount; methi is more bitter." }
+      ]
+    },
+    {
+      "name": "Onion",
+      "ingredient_id": "onion",
+      "quantity": 1,
+      "unit": "piece",
+      "prep": "finely chopped",
+      "status": "have",
+      "substitutes": [
+        { "name": "Spring onion", "note": "Use 3 stalks; add the greens at the end." }
+      ]
+    },
+    {
+      "name": "Tomato",
+      "ingredient_id": "tomato",
+      "quantity": 1,
+      "unit": "piece",
+      "prep": "chopped",
+      "status": "have",
+      "substitutes": [{ "name": "Tomato puree", "note": "2 tbsp puree for 1 tomato." }]
+    },
+    {
+      "name": "Garlic",
+      "ingredient_id": "garlic",
+      "quantity": 3,
+      "unit": "clove",
+      "prep": "minced",
+      "status": "optional",
+      "substitutes": [
+        { "name": "Hing", "note": "A pinch in hot oil gives a similar savoury depth." }
+      ]
+    },
+    {
+      "name": "Green chilli",
+      "ingredient_id": "green-chilli",
+      "quantity": 1,
+      "unit": "piece",
+      "prep": "slit",
+      "status": "optional"
+    },
+    {
+      "name": "Cumin seeds",
+      "ingredient_id": "cumin",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "prep": null,
+      "status": "optional"
+    },
+    {
+      "name": "Turmeric",
+      "ingredient_id": "turmeric",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "prep": null,
+      "status": "optional"
+    },
+    {
+      "name": "Cooking oil",
+      "ingredient_id": "oil",
+      "quantity": 1,
+      "unit": "tbsp",
+      "prep": null,
+      "status": "basic"
+    },
+    {
+      "name": "Salt",
+      "ingredient_id": "salt",
+      "quantity": null,
+      "unit": "to-taste",
+      "prep": null,
+      "status": "basic"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "text": "Heat the oil in a kadai on medium heat. Add the cumin seeds and let them crackle.",
+      "action": "fry",
+      "timer_minutes": null,
+      "tip": null
+    },
+    {
+      "n": 2,
+      "text": "Add the onion and green chilli. Sauté until the onion turns soft and golden, about 4 minutes.",
+      "action": "fry",
+      "timer_minutes": 4,
+      "tip": null
+    },
+    {
+      "n": 3,
+      "text": "Stir in the garlic for 30 seconds, then add the tomato, turmeric and a pinch of salt. Cook until the tomato breaks down, about 3 minutes.",
+      "action": "stir",
+      "timer_minutes": 3,
+      "tip": "Mash the tomato with the back of your spoon to speed it up."
+    },
+    {
+      "n": 4,
+      "text": "Add the chopped spinach. Stir until it wilts and most of the water evaporates, about 4 minutes.",
+      "action": "stir",
+      "timer_minutes": 4,
+      "tip": null
+    },
+    {
+      "n": 5,
+      "text": "Fold in the crumbled paneer and cook for 2 minutes, just until warmed through. Taste and adjust salt.",
+      "action": "stir",
+      "timer_minutes": 2,
+      "tip": "Don't overcook the paneer or it turns rubbery."
+    },
+    {
+      "n": 6,
+      "text": "Serve hot with rotis or toasted bread.",
+      "action": "plate",
+      "timer_minutes": null,
+      "tip": null
+    }
+  ],
+  "nutrition": {
+    "calories": 340,
+    "protein_g": 19,
+    "carbs_g": 12,
+    "fat_g": 24,
+    "fibre_g": 4,
+    "tags": ["High protein", "Low carb"]
+  },
+  "uses_up": [],
+  "missing_summary": null,
+  "tips": [
+    "Squeeze the chopped spinach lightly before cooking for a drier bhurji.",
+    "A pinch of garam masala at the end makes it smell like a dhaba."
+  ],
+  "locale": "en"
+}

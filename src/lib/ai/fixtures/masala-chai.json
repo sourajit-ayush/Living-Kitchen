@@ -1,0 +1,117 @@
+{
+  "id": "masala-chai",
+  "kind": "best_match",
+  "title": "Masala Chai",
+  "tagline": "Strong, milky chai simmered with fresh ginger and cardamom. The cup that starts every good day.",
+  "cuisine": "North Indian",
+  "diet": "vegetarian",
+  "meal": "breakfast",
+  "difficulty": "easy",
+  "prep_minutes": 2,
+  "cook_minutes": 8,
+  "servings": 2,
+  "spice_level": 1,
+  "cookware": ["gas"],
+  "ingredients": [
+    {
+      "name": "Water",
+      "ingredient_id": "water",
+      "quantity": 1,
+      "unit": "cup",
+      "prep": null,
+      "status": "basic"
+    },
+    {
+      "name": "Milk",
+      "ingredient_id": "milk",
+      "quantity": 1,
+      "unit": "cup",
+      "prep": null,
+      "status": "have",
+      "substitutes": [{ "name": "Oat milk", "note": "Add it at the end and only warm it through." }]
+    },
+    {
+      "name": "Tea leaves",
+      "ingredient_id": "tea",
+      "quantity": 2,
+      "unit": "tsp",
+      "prep": null,
+      "status": "have",
+      "substitutes": [{ "name": "Tea bags", "note": "Use 2 bags and steep 2 minutes." }]
+    },
+    {
+      "name": "Ginger",
+      "ingredient_id": "ginger",
+      "quantity": 1,
+      "unit": "piece",
+      "prep": "1 inch, crushed",
+      "status": "have",
+      "substitutes": [
+        { "name": "Dry ginger powder", "note": "A pinch, added with the tea leaves." }
+      ]
+    },
+    {
+      "name": "Cardamom",
+      "ingredient_id": "cardamom",
+      "quantity": 2,
+      "unit": "piece",
+      "prep": "lightly crushed",
+      "status": "optional"
+    },
+    {
+      "name": "Sugar",
+      "ingredient_id": "sugar",
+      "quantity": 2,
+      "unit": "tsp",
+      "prep": null,
+      "status": "have",
+      "substitutes": [
+        { "name": "Jaggery", "note": "Stir in off the heat so the milk doesn't split." }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "text": "Bring the water to a boil with the crushed ginger and cardamom, about 2 minutes.",
+      "action": "boil",
+      "timer_minutes": 2,
+      "tip": null
+    },
+    {
+      "n": 2,
+      "text": "Add the tea leaves and sugar and boil for 1 minute until deep amber.",
+      "action": "boil",
+      "timer_minutes": 1,
+      "tip": null
+    },
+    {
+      "n": 3,
+      "text": "Pour in the milk and let it rise to a boil twice, about 4 minutes.",
+      "action": "boil",
+      "timer_minutes": 4,
+      "tip": "Lowering the heat each time it rises makes it creamier."
+    },
+    {
+      "n": 4,
+      "text": "Strain into cups and serve hot.",
+      "action": "plate",
+      "timer_minutes": null,
+      "tip": null
+    }
+  ],
+  "nutrition": {
+    "calories": 95,
+    "protein_g": 4,
+    "carbs_g": 12,
+    "fat_g": 4,
+    "fibre_g": 0,
+    "tags": ["Warming"]
+  },
+  "uses_up": [],
+  "missing_summary": null,
+  "tips": ["Crush the ginger, don't grate it, for a clean, bright bite."],
+  "locale": "en",
+  "category": "drink",
+  "contains_alcohol": false
+}

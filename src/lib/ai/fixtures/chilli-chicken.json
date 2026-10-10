@@ -1,0 +1,167 @@
+{
+  "id": "chilli-chicken",
+  "kind": "almost_there",
+  "title": "Chilli Chicken",
+  "tagline": "Crisp chicken tossed in a glossy, garlicky soy and chilli sauce with crunchy capsicum.",
+  "cuisine": "Indo-Chinese",
+  "diet": "non-veg",
+  "meal": "dinner",
+  "difficulty": "medium",
+  "prep_minutes": 20,
+  "cook_minutes": 20,
+  "servings": 2,
+  "spice_level": 4,
+  "cookware": ["gas", "kadai"],
+  "ingredients": [
+    {
+      "name": "Boneless chicken",
+      "ingredient_id": "chicken",
+      "quantity": 400,
+      "unit": "g",
+      "prep": "cut into bite-size pieces",
+      "status": "missing",
+      "substitutes": [
+        {
+          "name": "Paneer",
+          "note": "Same weight, cubed; fry only 2 minutes (vegetarian Chilli Paneer)."
+        }
+      ]
+    },
+    {
+      "name": "Cornflour",
+      "ingredient_id": "cornflour",
+      "quantity": 3,
+      "unit": "tbsp",
+      "prep": null,
+      "status": "missing",
+      "substitutes": [
+        { "name": "Maida", "note": "Same amount; the coating is a little less crisp." }
+      ]
+    },
+    {
+      "name": "Egg",
+      "ingredient_id": "egg",
+      "quantity": 1,
+      "unit": "piece",
+      "prep": "beaten",
+      "status": "optional"
+    },
+    {
+      "name": "Soy sauce",
+      "ingredient_id": "soy-sauce",
+      "quantity": 2,
+      "unit": "tbsp",
+      "prep": null,
+      "status": "missing"
+    },
+    {
+      "name": "Green chilli",
+      "ingredient_id": "green-chilli",
+      "quantity": 4,
+      "unit": "piece",
+      "prep": "slit",
+      "status": "missing"
+    },
+    {
+      "name": "Garlic",
+      "ingredient_id": "garlic",
+      "quantity": 6,
+      "unit": "clove",
+      "prep": "finely chopped",
+      "status": "missing"
+    },
+    {
+      "name": "Capsicum",
+      "ingredient_id": "capsicum",
+      "quantity": 1,
+      "unit": "piece",
+      "prep": "cut into squares",
+      "status": "missing"
+    },
+    {
+      "name": "Onion",
+      "ingredient_id": "onion",
+      "quantity": 1,
+      "unit": "piece",
+      "prep": "cut into squares",
+      "status": "missing"
+    },
+    {
+      "name": "Cooking oil",
+      "ingredient_id": "oil",
+      "quantity": 1,
+      "unit": "cup",
+      "prep": "for frying",
+      "status": "basic"
+    },
+    {
+      "name": "Salt",
+      "ingredient_id": "salt",
+      "quantity": null,
+      "unit": "to-taste",
+      "prep": null,
+      "status": "basic"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "text": "Coat the chicken with cornflour, egg, 1 tsp soy sauce and a pinch of salt; rest 10 minutes.",
+      "action": "mix",
+      "timer_minutes": 10,
+      "tip": null
+    },
+    {
+      "n": 2,
+      "text": "Deep-fry the chicken in hot oil in two batches until golden and crisp, about 6 minutes.",
+      "action": "fry",
+      "timer_minutes": 6,
+      "tip": "Don't crowd the kadai, or the coating turns soggy."
+    },
+    {
+      "n": 3,
+      "text": "In 1 tbsp oil, stir-fry the garlic and green chilli on high heat for 1 minute.",
+      "action": "fry",
+      "timer_minutes": 1,
+      "tip": null
+    },
+    {
+      "n": 4,
+      "text": "Add the onion and capsicum and toss for 2 minutes so they stay crunchy.",
+      "action": "stir",
+      "timer_minutes": 2,
+      "tip": null
+    },
+    {
+      "n": 5,
+      "text": "Add the remaining soy sauce and 2 tbsp water, then toss the chicken through until glossy.",
+      "action": "stir",
+      "timer_minutes": 2,
+      "tip": null
+    },
+    {
+      "n": 6,
+      "text": "Serve hot with fried rice or noodles.",
+      "action": "plate",
+      "timer_minutes": null,
+      "tip": null
+    }
+  ],
+  "nutrition": {
+    "calories": 420,
+    "protein_g": 38,
+    "carbs_g": 18,
+    "fat_g": 22,
+    "fibre_g": 2,
+    "tags": ["High protein"]
+  },
+  "uses_up": [],
+  "missing_summary": "You'll need chicken, cornflour, soy sauce, garlic, green chilli, onion and capsicum.",
+  "tips": [
+    "Fry the chicken twice for restaurant-style crunch.",
+    "Keep the heat high so the sauce clings instead of pooling."
+  ],
+  "locale": "en",
+  "category": "food",
+  "contains_alcohol": false
+}

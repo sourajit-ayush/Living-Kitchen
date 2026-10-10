@@ -1,0 +1,98 @@
+{
+  "id": "virgin-mojito",
+  "kind": "wildcard",
+  "title": "Virgin Mojito",
+  "tagline": "Muddled mint and lime topped with fizzing soda: a sparkling glass of summer.",
+  "cuisine": "Cuban-inspired",
+  "diet": "vegan",
+  "meal": "snack",
+  "difficulty": "easy",
+  "prep_minutes": 5,
+  "cook_minutes": 0,
+  "servings": 2,
+  "spice_level": 0,
+  "cookware": ["no-cook"],
+  "ingredients": [
+    {
+      "name": "Mint leaves",
+      "ingredient_id": "mint",
+      "quantity": 1,
+      "unit": "bunch",
+      "prep": "leaves picked",
+      "status": "have"
+    },
+    {
+      "name": "Lemon",
+      "ingredient_id": "lemon",
+      "quantity": 1,
+      "unit": "piece",
+      "prep": "cut into wedges",
+      "status": "have"
+    },
+    {
+      "name": "Sugar",
+      "ingredient_id": "sugar",
+      "quantity": 2,
+      "unit": "tbsp",
+      "prep": null,
+      "status": "have",
+      "substitutes": [
+        { "name": "Honey", "note": "Stir it into the lime juice first so it dissolves." }
+      ]
+    },
+    {
+      "name": "Soda water",
+      "ingredient_id": "soda-water",
+      "quantity": 400,
+      "unit": "ml",
+      "prep": "chilled",
+      "status": "missing",
+      "substitutes": [{ "name": "Sprite", "note": "Skip the sugar, it is already sweet." }]
+    },
+    {
+      "name": "Ice cubes",
+      "ingredient_id": "ice",
+      "quantity": 8,
+      "unit": "piece",
+      "prep": null,
+      "status": "optional"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "text": "Muddle the mint, lemon wedges and sugar in each glass to release the juice and oils.",
+      "action": "mix",
+      "timer_minutes": null,
+      "tip": "Press gently: torn mint turns bitter."
+    },
+    {
+      "n": 2,
+      "text": "Fill the glasses with ice.",
+      "action": "other",
+      "timer_minutes": null,
+      "tip": null
+    },
+    {
+      "n": 3,
+      "text": "Top up with soda water, stir once and garnish with a mint sprig.",
+      "action": "plate",
+      "timer_minutes": null,
+      "tip": null
+    }
+  ],
+  "nutrition": {
+    "calories": 70,
+    "protein_g": 0,
+    "carbs_g": 18,
+    "fat_g": 0,
+    "fibre_g": 1,
+    "tags": ["Refreshing"]
+  },
+  "uses_up": [],
+  "missing_summary": "Add soda water and you can make Virgin Mojito.",
+  "tips": ["Chill the glasses for 10 minutes so the fizz lasts longer."],
+  "locale": "en",
+  "category": "drink",
+  "contains_alcohol": false
+}

@@ -1,0 +1,203 @@
+{
+  "id": "dhaba-palak-paneer",
+  "kind": "almost_there",
+  "title": "Dhaba-Style Palak Paneer",
+  "tagline": "Silky blanched-spinach gravy with golden paneer cubes, finished with cream and kasuri methi.",
+  "cuisine": "North Indian",
+  "diet": "vegetarian",
+  "meal": "dinner",
+  "difficulty": "medium",
+  "prep_minutes": 15,
+  "cook_minutes": 20,
+  "servings": 2,
+  "spice_level": 2,
+  "cookware": ["gas", "kadai"],
+  "ingredients": [
+    {
+      "name": "Spinach",
+      "ingredient_id": "spinach",
+      "quantity": 300,
+      "unit": "g",
+      "prep": "washed",
+      "status": "have"
+    },
+    {
+      "name": "Paneer",
+      "ingredient_id": "paneer",
+      "quantity": 200,
+      "unit": "g",
+      "prep": "cut into cubes",
+      "status": "have",
+      "substitutes": [
+        { "name": "Boiled potato", "note": "Cube 2 boiled potatoes and pan-fry until crisp." }
+      ]
+    },
+    {
+      "name": "Onion",
+      "ingredient_id": "onion",
+      "quantity": 1,
+      "unit": "piece",
+      "prep": "finely chopped",
+      "status": "have"
+    },
+    {
+      "name": "Tomato",
+      "ingredient_id": "tomato",
+      "quantity": 1,
+      "unit": "piece",
+      "prep": "pureed",
+      "status": "have"
+    },
+    {
+      "name": "Fresh cream",
+      "ingredient_id": "cream",
+      "quantity": 2,
+      "unit": "tbsp",
+      "prep": null,
+      "status": "missing",
+      "substitutes": [
+        {
+          "name": "Curd",
+          "note": "Whisk 2 tbsp curd with ½ tsp besan so it doesn't split; add off the heat."
+        },
+        {
+          "name": "Cashews",
+          "note": "Soak 8 cashews in hot water for 10 min and blend to a paste."
+        },
+        { "name": "Milk", "note": "3 tbsp full-fat milk, simmered for 2 extra minutes." }
+      ]
+    },
+    {
+      "name": "Kasuri methi",
+      "ingredient_id": "kasuri-methi",
+      "quantity": 1,
+      "unit": "tsp",
+      "prep": "crushed between your palms",
+      "status": "missing",
+      "substitutes": [
+        { "name": "Garam masala", "note": "Use ¼ tsp; different aroma but still warm and savoury." }
+      ]
+    },
+    {
+      "name": "Ginger",
+      "ingredient_id": "ginger",
+      "quantity": 1,
+      "unit": "piece",
+      "prep": "1-inch piece, grated",
+      "status": "optional"
+    },
+    {
+      "name": "Garlic",
+      "ingredient_id": "garlic",
+      "quantity": 3,
+      "unit": "clove",
+      "prep": "minced",
+      "status": "optional"
+    },
+    {
+      "name": "Green chilli",
+      "ingredient_id": "green-chilli",
+      "quantity": 1,
+      "unit": "piece",
+      "prep": null,
+      "status": "optional"
+    },
+    {
+      "name": "Garam masala",
+      "ingredient_id": "garam-masala",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "prep": null,
+      "status": "optional"
+    },
+    {
+      "name": "Cooking oil",
+      "ingredient_id": "oil",
+      "quantity": 1.5,
+      "unit": "tbsp",
+      "prep": null,
+      "status": "basic"
+    },
+    {
+      "name": "Salt",
+      "ingredient_id": "salt",
+      "quantity": null,
+      "unit": "to-taste",
+      "prep": null,
+      "status": "basic"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "text": "Boil water in a pot, add the spinach and blanch for 2 minutes. Drain and plunge into cold water to keep it bright green.",
+      "action": "boil",
+      "timer_minutes": 2,
+      "tip": "The ice-water dip is what keeps the colour vivid."
+    },
+    {
+      "n": 2,
+      "text": "Grind the blanched spinach with the green chilli into a smooth puree.",
+      "action": "grind",
+      "timer_minutes": null,
+      "tip": null
+    },
+    {
+      "n": 3,
+      "text": "Heat half the oil and pan-fry the paneer cubes until lightly golden, about 3 minutes. Set aside.",
+      "action": "fry",
+      "timer_minutes": 3,
+      "tip": null
+    },
+    {
+      "n": 4,
+      "text": "In the same kadai, heat the remaining oil. Sauté the onion until golden, about 5 minutes, then add the ginger and garlic for 1 minute.",
+      "action": "fry",
+      "timer_minutes": 5,
+      "tip": null
+    },
+    {
+      "n": 5,
+      "text": "Add the tomato puree and salt and cook until the oil separates, about 4 minutes.",
+      "action": "stir",
+      "timer_minutes": 4,
+      "tip": null
+    },
+    {
+      "n": 6,
+      "text": "Stir in the spinach puree and a splash of water. Simmer for 3 minutes.",
+      "action": "boil",
+      "timer_minutes": 3,
+      "tip": "Don't simmer longer or the spinach turns olive-dull."
+    },
+    {
+      "n": 7,
+      "text": "Add the paneer, garam masala and kasuri methi. Turn off the heat and swirl in the cream.",
+      "action": "mix",
+      "timer_minutes": null,
+      "tip": null
+    },
+    {
+      "n": 8,
+      "text": "Serve with hot rotis, naan or jeera rice.",
+      "action": "plate",
+      "timer_minutes": null,
+      "tip": null
+    }
+  ],
+  "nutrition": {
+    "calories": 410,
+    "protein_g": 20,
+    "carbs_g": 14,
+    "fat_g": 31,
+    "fibre_g": 5,
+    "tags": ["High protein", "Iron rich"]
+  },
+  "uses_up": [],
+  "missing_summary": "Add fresh cream and kasuri methi and you can make Dhaba-Style Palak Paneer.",
+  "tips": [
+    "No cream? Curd works if you add it off the heat.",
+    "Leftovers make a great sandwich filling the next morning."
+  ],
+  "locale": "en"
+}

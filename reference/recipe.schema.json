@@ -1,0 +1,318 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "living-kitchen/recipe.schema.json",
+  "title": "Recipe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "kind",
+    "title",
+    "tagline",
+    "cuisine",
+    "diet",
+    "meal",
+    "difficulty",
+    "prep_minutes",
+    "cook_minutes",
+    "servings",
+    "spice_level",
+    "cookware",
+    "ingredients",
+    "steps",
+    "nutrition",
+    "uses_up",
+    "missing_summary",
+    "tips",
+    "locale"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "kebab-case slug, unique per response"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "best_match",
+        "almost_there",
+        "wildcard"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "tagline": {
+      "type": "string",
+      "maxLength": 140,
+      "description": "one warm sentence"
+    },
+    "cuisine": {
+      "type": "string"
+    },
+    "diet": {
+      "type": "string",
+      "enum": [
+        "vegetarian",
+        "eggetarian",
+        "vegan",
+        "jain",
+        "non-veg"
+      ]
+    },
+    "meal": {
+      "type": "string",
+      "enum": [
+        "breakfast",
+        "lunch",
+        "snack",
+        "dinner",
+        "dessert"
+      ]
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "medium",
+        "chef"
+      ]
+    },
+    "prep_minutes": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 240
+    },
+    "cook_minutes": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 480
+    },
+    "servings": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 12
+    },
+    "spice_level": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "cookware": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "gas",
+          "pressure-cooker",
+          "microwave",
+          "oven",
+          "air-fryer",
+          "tawa",
+          "kadai",
+          "no-cook"
+        ]
+      }
+    },
+    "ingredients": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "quantity",
+          "unit",
+          "status"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "ingredient_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "matches src/data/ingredients.ts id when known"
+          },
+          "quantity": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "null for 'to taste'"
+          },
+          "unit": {
+            "type": "string",
+            "description": "g, kg, ml, l, tsp, tbsp, cup, katori, piece, pinch, to-taste, bunch, clove"
+          },
+          "prep": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "e.g. finely chopped"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "have",
+              "missing",
+              "optional",
+              "basic"
+            ]
+          },
+          "substitutes": {
+            "type": "array",
+            "maxItems": 3,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "name",
+                "note"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string",
+                  "description": "how to use / ratio"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "n",
+          "text",
+          "action"
+        ],
+        "properties": {
+          "n": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "text": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "chop",
+              "stir",
+              "fry",
+              "boil",
+              "bake",
+              "mix",
+              "rest",
+              "grind",
+              "plate",
+              "other"
+            ]
+          },
+          "timer_minutes": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "tip": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "nutrition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "calories",
+        "protein_g",
+        "carbs_g",
+        "fat_g",
+        "fibre_g"
+      ],
+      "properties": {
+        "calories": {
+          "type": "integer"
+        },
+        "protein_g": {
+          "type": "number"
+        },
+        "carbs_g": {
+          "type": "number"
+        },
+        "fat_g": {
+          "type": "number"
+        },
+        "fibre_g": {
+          "type": "number"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "uses_up": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "expiring ingredients this recipe uses"
+    },
+    "missing_summary": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "e.g. 'Add curd and you can make this.' null if nothing missing"
+    },
+    "tips": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "string"
+      }
+    },
+    "locale": {
+      "type": "string",
+      "enum": [
+        "en",
+        "hi"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "food",
+        "drink"
+      ],
+      "default": "food",
+      "description": "food or a drink; missing = food (recipes saved before drinks)"
+    },
+    "contains_alcohol": {
+      "type": "boolean",
+      "default": false,
+      "description": "drinks only: true only when the user asked for alcohol"
+    }
+  }
+}

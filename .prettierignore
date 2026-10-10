@@ -1,0 +1,10 @@
+.next
+.next-test
+node_modules
+pnpm-lock.yaml
+docs
+reference
+*.md
+playwright-report
+test-results
+src/styles/tokens.css

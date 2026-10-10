@@ -1,0 +1,70 @@
+/* The Living Kitchen — design tokens. Copy to src/styles/tokens.css */
+:root {
+  /* Color */
+  --cream-50: #FFFBF5;
+  --cream-100: #FFF4E6;
+  --cream-200: #F7E6CF;
+  --walnut-900: #2B1D14;
+  --walnut-700: #5A3E2B;
+  --walnut-500: #8B6A4F;
+  --tomato-500: #E2553A;
+  --tomato-600: #C8432A;
+  --saffron-400: #F4B23E;
+  --basil-600: #4E7A3A;
+  --turmeric-100: #FDF1D2;
+  --chilli-700: #9E2A1F;
+  --steam-glass: rgba(255, 248, 238, 0.62);
+
+  /* Semantic */
+  --bg: var(--cream-50);
+  --surface: var(--cream-100);
+  --border: var(--cream-200);
+  --text: var(--walnut-900);
+  --text-muted: var(--walnut-700);
+  --icon: var(--walnut-500);
+  --primary: var(--tomato-500);
+  --primary-hover: var(--tomato-600);
+  --highlight: var(--saffron-400);
+  --success: var(--basil-600);
+  --danger: var(--chilli-700);
+  --glass: var(--steam-glass);
+
+  /* Type */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-hand: "Caveat", cursive;
+
+  /* Radius */
+  --r-chip: 10px;
+  --r-control: 16px;
+  --r-card: 24px;
+  --r-sheet: 32px;
+
+  /* Shadow */
+  --shadow-soft: 0 20px 60px -20px rgba(90, 62, 43, 0.35);
+  --shadow-chip: 0 2px 8px -2px rgba(90, 62, 43, 0.25);
+
+  /* Glass */
+  --glass-blur: blur(18px) saturate(1.2);
+
+  /* Motion */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-micro: 150ms;
+  --dur-ui: 280ms;
+  --dur-scene: 1100ms;
+}
+
+[data-kitchen="night"] {
+  --bg: #1C140E;
+  --surface: rgba(43, 29, 20, 0.72);
+  --border: rgba(247, 230, 207, 0.14);
+  --text: #F7E6CF;
+  --text-muted: #D9C3A5;
+  --icon: #BFA284;
+  --highlight: #FFB45C;
+  --glass: rgba(43, 29, 20, 0.62);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-ui: 1ms; --dur-scene: 1ms; }
+}
