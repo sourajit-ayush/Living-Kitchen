@@ -24,6 +24,7 @@ import { useKitchen } from "@/store/useKitchen";
 import { warmComposer } from "./composerWarmup";
 import { cook, POT_MOUTH } from "./cookSignals";
 import type { QualityTier } from "./quality";
+import { SanitizePass } from "./sanitizePass";
 import { extraWarmups } from "./sceneWarmup";
 
 const BLOOM = 0.4;
@@ -51,6 +52,9 @@ export function Effects({
   const focus = useMemo(() => new THREE.Vector3(POT_MOUTH.x, POT_MOUTH.y + 0.4, POT_MOUTH.z), []);
   const high = tier === "high";
   const composer = useRef<EffectComposerImpl>(null);
+  // First pass: NaN/Infinity from low-precision phone GPUs must never reach bloom (sanitizePass.ts).
+  const sanitize = useMemo(() => new SanitizePass(), []);
+  useEffect(() => () => sanitize.dispose(), [sanitize]);
 
   // Pre-compile the composer's shaders with the rest of the scene (see composerWarmup.ts).
   useLayoutEffect(() => {
@@ -93,6 +97,7 @@ export function Effects({
 
   return (
     <EffectComposer ref={composer} multisampling={high ? 4 : 2} enableNormalPass={false}>
+      <primitive object={sanitize} />
       <Bloom ref={bloom} mipmapBlur levels={5} luminanceThreshold={0.85} intensity={BLOOM} />
       {high ? <DepthOfField ref={dof} target={focus} focusRange={0.9} bokehScale={0} /> : <></>}
       <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />

@@ -696,3 +696,12 @@ The user picked feature 3 (list on WhatsApp), feature 7 (hands-free voice Cook M
 7. **Real check:** spinach (expiring) plus a pantry of rice, dal and basics, vegetarian, at most 30 min, dinner. Answer: "Palak Dal Khichdi: Comforting and warm for dinner, and it uses up your spinach." Best match, nothing to buy, 14 s.
 8. **Test stability.** All accessibility checks now go through `e2e/axe.ts`, which waits for entrance animations to finish before measuring.
    - On the heavier full suite, axe had caught panels mid-fade and reported blended text colours (4.2–4.4:1). At rest the same text is 4.82:1.
+
+## Fix: black squares over the 3D kitchen on phones (2026-10-14)
+1. **Symptom.** On an Android phone (live site), large stepped black blocks covered the wall and window every time the page opened.
+2. **Cause.** Phone GPUs compute in lower precision. A hot highlight can overflow to Infinity or become NaN in a single pixel, and bloom's mipmap blur spreads that pixel across its downsampled levels into big black squares.
+   - Reproduced on desktop by injecting one NaN and one Infinity patch into the scene: 39% of the canvas turned black, in the same stepped shape as the phone.
+3. **Fix.** `SanitizePass` (`src/components/scene/sanitizePass.ts`) is the first post-processing pass.
+   - NaN becomes black, Infinity and anything above 32 is capped, and negatives are clamped to 0, before bloom or any other effect reads the frame.
+   - Same injection with the fix: 0.2% near-black, a normal kitchen, no shader errors.
+   - Cost: one cheap full-screen pass. It only exists on tiers that use post-processing (medium, high).
